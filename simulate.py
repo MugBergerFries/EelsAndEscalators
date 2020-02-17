@@ -43,4 +43,4 @@ def simulate_game(Ladders, Snakes):
 
     return turns
 
-print(f"number of turns = {simulate_game(Ladders, Snakes)}")
+# print(f"number of turns = {simulate_game(Ladders, Snakes)}")
