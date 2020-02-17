@@ -17,5 +17,15 @@ def coin_flip_fuck_recursion(n):
 
     return answers[n-1]
 
+def die(n):
+    
+    step = 6
+    answers = [6.0] * 6
+    while(step != n):
+        answers.append((sum(answers[step-6:step+1]) / 6) + 1)
+        step += 1 
+
+    return answers[n-1]
+
 # print(coin_flip(30))
-print(coin_flip_fuck_recursion(100))
+print(die(100))
